@@ -1,0 +1,190 @@
+% Created 2010-02-12 Fri 12:27
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{soul}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{indentfirst}
+
+\title{paper}
+\author{Feng Liu}
+\date{12 February 2010}
+
+\begin{document}
+
+%\maketitle
+
+%\setcounter{tocdepth}{3}
+%\tableofcontents
+%\vspace*{1cm}
+\section{Adaptive and Predictive Downlink Resource Management in Next Generation CDMA Networks}
+\label{sec-1}
+
+
+In the world today, users expect to be able to move from one cell Base
+Station (BS) to another without dropping a call. It is widely agreed
+upon that dropping an active call is worse than rejecting a new call,
+and so the need for Base Stations to be able to handle both incoming
+calls and hand-off calls while still maintaining Quality of Service
+(QoS) has become increasingly important.
+
+Although Time-Division Multiple Access (TDMA) and Frequency-Division
+Multiple Access (FDMA) systems can maintain QoS for hand-off calls
+using a Hard Guard Channel, where resources are fixed and predicatble,
+Code-Division Multiple Access (CDMA) systems are limited by power and
+other concerns. This means we must provide an adaptable, Soft Guard
+Channel that can adjust to varying levels of traffic at any given
+time, without any assumptions of traffic and mobility patterns.
+
+This paper addresses the need for a Soft Guard Channel to prevent
+dropped calls when mobile users move from one cell to another by
+proposing two methods: Guard Capacity Adaption Based on Dropping
+(GAD), and Guard Capacity Adaptation Based On Prediction and Dropping
+(GAPD). Both schemes are found to be effective, however GAPD is more
+robust to temporal traffic variations and control parameter changes
+due to its dropped call prediction method.
+
+
+\section{Performance Analysis of Downlink Power Control in CDMA Systems}
+\label{sec-2}
+
+
+Downlink Power in CDMA networks is responsible for providing good
+quality signal coverage, load balancing in inter-cell areas and
+minimizing necessary power transmission required in order to reduce
+cochannel interference with other cells and increase system capacity.
+Power control is also important to reduce noise caused by
+high-transmit power levels of nearby mobiles, and preserve the
+batteries of said mobiles.
+
+This article discusses four methods of power control for CDMA based
+cellular networks. Two of which us an open loop system, while the
+other two maintain a closed loop system to manage power. These
+algorithms are as follows:
+
+The Distance Based Power Allocation Algorithm (DBPA), determines power
+levels required for connected mobiles without the need for correction
+or feedback. Typically, users at the cell boundary are going to have
+greater interference and thus will require additional power.
+Conversely, the Distributed Balancing Algorithm (DBA) makes use of a
+received Signal to Interference Ratio (SIR) from connected mobiles to
+adjust the transmission for better quality dynamically. DBA tends to
+have better results due to the feedback it receives from mobiles.
+
+Multiple Step SIR-based Power Control (MSPC) and Adaptive Step
+SIR-based Power Control (ASPC) both make use of closed-loop
+mechanisms. MSPC and ASPC alike will use a number of iterations to
+examine mobile feedback individually and adjust power appropriately to
+those moviles as needed. The difference between the two is that ASPC
+makes use of the results of its previous iteration in the
+determination of power management for the current iteration. This
+leads to a faster tendency towards no outages.
+
+
+\section{UMTS Release 99/4 Airlink Enhancement for supporting MBMS Services}
+\label{sec-3}
+
+
+This paper discusses the need for multicast support in mobile
+networks. There are many applications, such as distance education,
+emergency situation communication, battlefield environments and more.
+Methods such as longer Transmission Time Interval (TTI) and Space-time
+block coding based transmit diversity (STTD) techniques, which reduce
+redundancy in multiple transmitted versions of a signal, to reduce the
+power requirement of delivering multicast traffic over Forward Access
+Channel (FACH) for Multimedia Broadcast Multicast Service (MBMS)
+users.
+
+        
+
+\section{Reducing the Transmission Power Requirements of the Multimedia Broadcast/Multicast Service}
+\label{sec-4}
+
+
+MBMS is well-suited to customers paying for a service, particularly a
+video feed service. The problem with the current model arises when
+multicast content is delivered to a receiver that has multiple types
+of subscribing clients it becomes difficult to select an appropriate
+variant of the content; High quality data factors out users with
+simple terminals and those who cannot afford the service, while low
+quality data will not please users who are willing to pay more for a
+better service.
+
+According to this paper, the current MBMS power model can be extended
+to maximize the number of users supported, without using excessive
+amounts of power. This can be done by supporting the distribution of
+multiple variants of the same content to heterogeneous receivers via
+an extended MBMS model.
+
+
+\section{Power Efficient Radio Bearer Selection in MBMS Multicast Mode}
+\label{sec-5}
+
+
+This paper discusses the optimization of the Universal Mobile
+Telecommunications System (UMTS) and the importance of channel
+selection on a Base Station to increase MBMS capacity while
+maintaining a minimal transmission power to reduce cell to cell
+interference. The useful channels are the Dedicated Channel (DCH), the
+Forward Access Channel (FACH) and the High Speed Downlink Shared
+Channel (HSDSCH). Selection an improper channel could result in a
+significant capacity decrease, and so this is an important issue.
+
+
+\section{Multicast Scheduling in Cellular Data Networks}
+\label{sec-6}
+
+
+Modern 3G mobile networks are becoming increasingly popular for
+services such as video and music streaming, but the existing multicast
+schemes are too rigid and unable to adapt to users with different
+channel conditions. Currently, multicast techniques employ a fixed
+data rate that is applicable to users at the edge of the cell
+boundary, effectively limiting the bandwidth of users closer to the
+base station. Although this paper primarily discusses TDMA and
+CMDA2000, it suggests that multicast management can be improved by
+selecting a data rate above the worst-case when there are few enough
+worst-case users to warrant such an action. This would mean certain
+users would be unable to receive the transmission, while the majority
+would benefit from the improved data rate.
+
+
+\section{Fixed/Variable Power Multicast Over Heterogeneous Fading Channels in Cellular Networks}
+\label{sec-7}
+
+
+Cellular multicast currently manages power based on a worst-case
+scenario. Data rate is optimized for users at the edge of the cell,
+who will not be able to handle the same rates that users close to the
+base station will. This paper discusses methods to achieve a better
+minimum goodput across all receivers using adaptive power and rate
+control through time-sharing based rate adaption with fixed-power or
+variable-power control strategies. These strategies will make use of
+the Lagrangian duality theory to obtain the optimal power-rate
+adaption policy.
+
+
+\section{A Cell-based Call Admission Control and Bandwidth Reservation Scheme for QoS Support in Wireless Cellular Networks}
+\label{sec-8}
+
+
+This paper discusses similar issues to the paper entitled, “Adaptive
+and Predictive Downlink Resource Management in Next Generation CDMA
+Networks”. Cellular base stations have a limited amount of bandwidth
+that must be shared between new calls and hand-off calls when a mobile
+user moves across cell boundaries onto a new base station. Methods in
+use today reserve a fixed amount of bandwidth for hand-off calls and
+the rest is used for new calls. This is extremely inefficient and
+wasteful when there are few or no hand-off calls, as it will block new
+calls from being established. An adaptable method that achieves low
+new call blocking probability (CBP), low hand-off call dropping
+probability (CDP) and high cell bandwidth utilization (U) is proposed
+by the authors.
+
+\end{document}
