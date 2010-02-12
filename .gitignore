@@ -5,3 +5,11 @@ auto
 *.dvi
 *.pdf
 paper
+paper.*
+paper.org
+paper.out
+paper.toc
+paper.txt
+*.bbl
+*.blg
+
