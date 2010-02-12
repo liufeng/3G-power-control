@@ -1,0 +1,104 @@
+The goal of this project is three-fold:
+
+1. To understand the power model (i.e., how to calculate the signal
+   noise ratios at each individual mobile user) in CDMA based 3G
+   networks
+
+2. To understand the feedback-based power management ideas for
+   downlink power control, as well as other multicast support in
+   cellular networks papers
+
+3. To implement a simulation model for downlink power management for
+   multicast traffic in CDMA based 3G networks.
+
+For 1 --
+
+Downlink means from the base station to the mobile user direction. As
+described in class, for wireless communications, the signal-to noise
+ratio (SNR) affects the bit error rate a mobile user experiences; for
+proper data transmission, the power level used at the base station for
+each mobile user should be adjusted such that each user can have
+adequate, but not un-necessarily high, SNR for proper data reception,
+and minimal interference to others. Saved power can also be used to
+support more users. There are power models to calculate the SNR at
+mobile stations in 3G cellular networks, parameters of the model in
+includes distance between the base station and the mobile user, as
+well as some others. Some are constants. You are asked to study the
+related papers and books, and understand these models.
+
+The power model can be read from the following papers: Xin Wang,
+Ramachandran Ramjee, Harish Viswanathan, Adaptive and predictive
+downlink resource management in next generation CDMA networks. Look
+for the 14-page version of this paper.
+
+For 2 --
+
+Feedback-based power control is used in today's cellular networks,
+mainly for unicast traffic. You are asked to read these power control
+schemes, fully understand them. The papers are:
+
+- for unicast 
+
+  o Soumya Das, Sachin Ganu, Natalia Rivera, Ritabrata Roy,
+    "Performance analysis of downlink power control in CDMA systems",
+    IEEE Sarnoff Student Symposium 2004
+
+- for multicast
+
+  o M. Chuah, Teck Hu, and W. Luo, UMTS release 99/4 airlink
+    enhancement for supporting MBMS services
+
+  o George Xylomenos, Vasilis Tsakanikas, and George C. Polyzos,
+    Reducing the transmission power requirements of the multimedia
+    broadcast/multicast service
+
+  o Antonios Alexiou, Christos Bouras, Vasileios Kokkinos, Evangelos
+    Rekkas. Power efficient radio bearer selection in MBMS multicast
+    mode
+
+The following two papers are more general than above on multicast
+support in cellular networks
+
+  o Multicast scheduling in cellular data networks, IEEE Infocom 2007
+
+  o Fixed/variable power multicast over heterogeneous fading channels
+    in cellular networks, IEEE ICC 2008
+
+For 3 -- The attached code is a cellular network simulator written in C/C++.
+
+The code was developed by a previous graduate student of mine on
+Linux. Just type "tar -xvf mobilityCC.tar", and "make". You should get
+an executable called "cell", and you can run with just "./cell". The
+execution takes about 6 to 7 minutes, which you certainly can try to
+shorten. I think the link-list management is inefficient right now.
+
+This simulation model does not have 1 and 2 above built in it. It does
+have the model of a cell-based cellular network. And models for user
+mobility, as well as user bandwidth requirements and cell bandwidth
+management. It was developed for this paper:
+
+Y. E. Liu and M. Han. A Cell-based Call Admission Control and
+Bandwidth Reservation Scheme for QoS Support in Wireless Cellular
+Networks. In Proceedings of the Workshop on Performance of Wireless
+Networks and Communication Systems (WiNCS 2005), pages 273-282,
+Philadelphia, PA. July 2005. The Society for Modeling and Simulation
+International (SCS).
+http://www.cs.umanitoba.ca/~yliu/MYPUB/wincs2005.pdf
+
+You are asked to modify the code, or develop your own based on the
+cellular network model implemented in this code, adding 1 and 3 in it,
+and be able to model multicast power control schemes in such a
+network. The ultimate goal of this research is to come up with sound
+multicast power management schemes (preferably feedback-based) for
+optimal performance. The simulator that you develop will be used for
+studies toward this goal. You are encouraged to think of your own such
+schemes. The challenge here is to determine what kind of information
+should be sent back to the base station as feedbacks, and how a base
+station uses these feedbacks for optimal power control. These
+materials are for you to get started. I will let you know in case I
+find more materials for this project. I am more than happy to talk
+with you regarding any issues or aspects of this project, at any time.
+For locating the papers, you can simply use google scholar, IEEE and
+ACM digital libraries. If you find any more recent papers on this
+research subject, by all means add them to your bibliography. It will
+be part of the contribution of your project.
