@@ -1,0 +1,10 @@
+
+Nov 20, 2004
+------------
+This directory is the same as Mobility, except that I
+attempt to change cell.c into a bunch of smaller .c
+files.  
+
+Seems it is fairly correct now. 
+Prove to me if otherwise.  :)
+ 

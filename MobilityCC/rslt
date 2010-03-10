@@ -1,0 +1,42 @@
+tt = 101.675685
+simulation termination time =   4000.004
+
+***************************************************
+* observation in cell [4 4]
+***************************************************
+number of new calls = 5307
+number of new calls blocked = 5162
+call blocking prob = 0.972678.
+
+number of handoff calls = 160
+number of handoff droped = 29
+handoff dropping prob = 0.18125.
+
+availbale bandwidth = 2
+reserved bandwidth = 256
+used bandwidth = 29742
+Percentage of BW used at termination = 0.9914.
+bandwidth utilization = 0.73811.
+
+remaining calls in cell = 223
+
+***************************************************
+*     aggregated performance over all 100 cells   *
+***************************************************
+number of new calls = 519718
+number of new calls blocked = 497735
+call blocking prob = 0.957702.
+
+number of handoff calls = 18002
+number of handoff droped = 6230
+handoff dropping prob = 0.346073.
+
+availbale bandwidth = 363470
+reserved bandwidth = 124968
+used bandwidth = 2511562
+Percentage of BW used at termination = 0.837187.
+bandwidth utilization = 0.620768.
+
+remaining calls in cell = 18126
+
+Cleared out remaining events.

@@ -1,0 +1,45 @@
+gull:/home/cs/staff/yliu/RESEARCH/MINKI/MobilityCC> ./cell
+tt = 101.675685
+Initialization complete.
+simulation termination time =   4000.002
+
+***************************************************
+* observation in cell [4 4]
+***************************************************
+number of new calls = 5087
+number of new calls blocked = 4973
+call blocking prob = 0.97759.
+
+number of handoff calls = 184
+number of handoff droped = 53
+handoff dropping prob = 0.288043.
+
+availbale bandwidth = 3388
+reserved bandwidth = 1536
+used bandwidth = 25076
+Percentage of BW used at termination = 0.835867.
+bandwidth utilization = 0.645582.
+
+remaining calls in cell = 188
+
+***************************************************
+*     aggregated performance over all 100 cells   *
+***************************************************
+number of new calls = 504971
+number of new calls blocked = 458430
+call blocking prob = 0.907834.
+
+number of handoff calls = 16915
+number of handoff droped = 4882
+handoff dropping prob = 0.28862.
+
+availbale bandwidth = 448964
+reserved bandwidth = 127762
+used bandwidth = 2423274
+Percentage of BW used at termination = 0.807758.
+bandwidth utilization = 0.61665.
+
+remaining calls in cell = 17880
+
+Cleared out remaining events.
+
